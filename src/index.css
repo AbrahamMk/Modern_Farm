@@ -1,13 +1,626 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:ital@1&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+  margin-top: opx;
+  background-color:  #b6ad90;
+  color: white;
+  font-family: agbalumo;
+  border-radius: 3px;
+  height: 150px;
+  font-size: large;
+  margin-left: 0px;
+}
+
+.header h1 {
+  font-size: 60px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0px;
+  font-weight: 200;
+}
+
+.logo img {
+  max-width: 100%;
+  width: auto;
+  height: 100px;
+  border-radius: 200px;
+  right: 35px;
+  top: 50px;
+}
+
+.content {
+  flex: 1;
+  font-family: agbalumo;
+
+}
+.navbar ul{
+     list-style-type: none;
+     background-color: #a68a64;
+     padding: opx;
+     margin: 0px;  
+     overflow: hidden;
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+.navbar a:hover{
+  background-color: #424141;
+}
+.navbar li{
+  float: left;
+  font-family: agbalumo;
+
+}
+  
+.searchbar{
+  padding-left: 1029px;
+  padding-top: 10px;
+  border-radius: 10px;
+  height: 25px;
+}
+.active {
+  font-weight: bold;
+  background-color: black;
+}
+.searchbar input{
+  border-radius: 5px;
+  height: 4vh;
+  width: 350px;
+  border: none;
+
+}
+
+button4{
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  margin-top: 46px;
+  padding-top: 49px;
+  margin-left: 20px;
+  font-size: 20px;
+  font-family: agbalumo;
+}
+
+
+
+  .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    color: black;
+    font-family: agbalumo;
+    border-radius: 20px;
+    height: 150px;
+    font-size: large;
+
+  }
+  
+  .body h2 {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+  }
+  
+  .body p {
+    color: #666;
+    justify-content: center;
+ }
+
+ .crop1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+   }
+   .crop1 img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    flex: 1;
+    padding-bottom: 50px;
+    padding-top: 2;
+   }
+
+ .crop1discription {
+  flex: 1;
+  padding-left: 20px;
+  display: flex;
+  font-family: 'Times New Roman', Times, serif;
+  word-spacing: 2px;
+  line-height: 30px;
+  padding-bottom: 100px;
+
+ }
+
+  .blogtitle{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    padding: 20px;
+ }
+ h2{
+  font-weight: 100;
+ }
+ h3{
+  display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 20px;
+    font-weight: 100;
+ }
+ 
+ article{
+  flex: 2;
+  padding-left: 20px;
+  display: flex;
+  word-spacing: 2px;
+  line-height: 30px;
+  padding-bottom: 100px;
+  font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ .blog-img {
+  flex: 1; 
+  margin-right: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 7em;
+  padding-top: 20px;
+}
+
+.blog-img img {
+  height: 200px;
+  width: 250px;
+  border-radius: 10px; 
+  margin: 10px;
+  padding-top: 0px;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+ .bottomdash{
+  display: flex;
+  background-color:  #a68a64;
+  color: white;
+  padding: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: center;
+  padding-left: center;
+  justify-items: center;
+ }
+
+
+
+.Blocks {
+  font-family: agbalumo;
+}
+  
+.Fheader{
+  font-family: agbalumo;
+}
+
+.p{
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  align-items: center;
+  font-family: agbalumo;
+  text-decoration: underline;
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(2, 83, 2);
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  cursor: pointer;
+  padding: 5px;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+ }
+
+ .teff{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 3px;
+  flex-wrap: wrap;
+ }
+.teffdescription{
+  color: #424141;
+  font-family: agbalumo;
+}
+ .teff img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+ }
+ .teff:hover{
+  transform: translateY(-5px);
+ }
+
+
+ 
+ .barley{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 3px;
+
+ }
+ .barleydescription{
+  font-family: agbalumo;
+ }
+ .barley img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+
+ }
+ .barley:hover{
+  transform: translateY(-5px);
+ }
+
+ .coffee{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 3px;
+
+
+ }
+ .coffee img{
+     width: 100%;
+     max-width: 300px;
+     border-radius: 10px;
+ }
+ .coffeedescription{
+  font-family: agbalumo;
+ }
+.coffee:hover{
+  transform: translateY(-5px);
+}
+ 
+
+ .maize{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 3px;
+
+ }
+ .maizedescription{
+  font-family: agbalumo;
+ }
+ .maize img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+ }
+ .maize:hover{
+  transform: translateY(-5px);
+ }
+ .sugarcane {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 3px;
+
+ }
+.sugercanedescription{
+  font-family: agbalumo;
+}
+ .sugarcane img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+ }
+ .sugarcane:hover{
+  transform: translateY(-5px);
+ }
+
+ .wheat{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 3px;
+
+ }
+.wheatdescription{
+  font-family: agbalumo;
+}
+ .wheat img{
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+
+ }
+ .wheat:hover{
+  transform: translateY(-5px);
+ }
+
+ .Avocados{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  padding: 3px;
+
+}
+.Avocadosdescription{
+  font-family: agbalumo;
+}
+.Avocados img{
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  border-radius: 10px
+
+}
+
+.Avocados:hover{
+  transform: translateY(-5px);
+}
+
+.Apple{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  padding: 3px;
+}
+.Appledescription{
+  font-family: agbalumo;
+}
+.Apple img{
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  border-radius: 10px
+
+}
+
+.Apple:hover{
+  transform: translateY(-5px);
+}
+.Banana{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.Bananadescription{
+  font-family: agbalumo;
+}
+.Banana img{
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  border-radius: 10px
+}
+
+.Banana:hover{
+  transform: translateY(-5px);
+}
+
+.colorofpage{
+  height: 100vh;
+  background: white;
+}
+.signcontainer1{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+ 
+}
+
+.signheader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  gap: 0px;
+  margin-top: auto;
+}
+
+.signtext{
+  color: black;
+  font-size: 50px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.inputs{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.input{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 480px;
+  height: 60px;
+  background: white;
+  border-radius: 5px;
+}
+
+.input img{
+  margin: 0px 20px;
+}
+
+.input  input{
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color:#797979;
+  font-size: 20px;
+}
+.submitcontainer{
+  display: flex;
+  gap: 5px;
+  margin: 60px auto;
+  justify-content: center;
+  
+}
+
+.submit{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 30px;
+  color: black;
+  background: white;
+  border-radius: 10px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.submit:hover{
+  color: white;
+  background-color: black;
+}
+ .gray{
+  background: #eaeaea;
+  color: #676767;
+ }
+ .blocket{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
+ }
+ .message input{
+  height: 50vh;
+  width: 70vh;
+  border-radius: 10px;
+  max-width: 450px;
+  vertical-align: bottom;
+  font-size: 19px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  padding-bottom: 5px;
+  box-sizing: border-box;
+ }
+ button{
+  color: black;
+  background-color: white;
+  border-radius: 4px;
+  border: 1px solid #a68a64;
+  width: 90px;
+  height: 30px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.8s ease;
+ }
+ button:hover{
+  color: white;
+  background-color: black;
+  transform: translateY(-2px);
+ }
+ 
+ .frequently_asked ul{
+  font-size: 30px;
+  text-decoration:overline underline;
+  color:#a65a70;
+ }
+.frequently_asked li{
+color: black;
+text-decoration: underline;
+text-decoration: underline;
+list-style-type: none;
+cursor: pointer;
+padding-bottom: 10px;
+}
+.frequently_asked li:hover{
+color: blue;
+}
+
+
+.farm-blog-header h1{
+  display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: agbalumo;
+   font-weight: 100;
+   font-size: 50px;
+   text-decoration:  dotted underline;
+}
+
+.farm-blog-container{
+ display: flex;
+ align-items: center;
+  border-radius: 10px;
+}
+
+.farm-blog-img{
+ flex:1;
+ margin-right: 20px;
+}
+.farm-blog-img img{
+  border-radius: 10px; 
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  padding-top: -10px;
+  margin-left: 20px ;
+}
+
+.farm-blog-article{
+ flex:2;
+ padding: 10px;
+ padding-top: 50px;
+ padding-left: 30px;
+ font-family: calibri, Helvetica, sans-serif;
+ word-spacing: 5px;
+ line-height: 25px;
+ font-weight: 10;
+ font-size:20px;
+ font-size: 15px;
+ padding-bottom: 200px;
+ margin: 10px 0px 10px 10px;
 }
