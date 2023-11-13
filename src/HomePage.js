@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaSearch } from 'react-icons/fa';
 
 
 const HomePage = () => {
@@ -8,12 +7,12 @@ const HomePage = () => {
   return (
     <div className="content">
         <div className="header">
-          <h1>Moder Farm</h1>
+          <h1>Modern Farm</h1>
           <div className='logo'>
           <img src="https://th.bing.com/th/id/R.3b186fe91c7ed8475c58add5594ae8f9?rik=j%2bzkARBvQjq8Tw&pid=ImgRaw&r=0"
           alt=""
            />
-          </div>
+          </div>s
         </div>
     
       <nav className="navbar">
@@ -54,7 +53,7 @@ const HomePage = () => {
         alt=""
         />
       </div>
-      <div className="crop1discription">
+      <div className="discription">
         <p>
             <br></br>Agriculture is the backbone of Ethiopia's economy, 
         accounting for over 40% of GDP, 80% of total employment,
@@ -77,41 +76,65 @@ const HomePage = () => {
                 
         </p>
       </div>
-         <div className="farmblog">  
+
+    <div className="farmblog">  
          <div className='blogtitle'>
+
       <h2>Farm Blogs</h2>
-      </div>
-      <h3>Title: Harvesting Green: Cultivating Sustainable Agriculture for a Brighter Future </h3>
-      <article>
-        <div className="blog-img">
+         </div >
+      <div className="blog-container">
 
-         <Link to="./FarmBlog" > 
+        <div className="blog-1-container">
 
-         <img 
-         src='https://th.bing.com/th/id/R.dcf19951e7ba9ffe8aed4e8e278f0924?rik=gtgefWOPEIMITw&pid=ImgRaw&r=0'
-         alt='blog_image' 
-         /> 
-
-         </Link>
+         <div class='blog-1'>
+          <Link to="FarmBlog">
+          <img
+          src="https://th.bing.com/th/id/R.cd0db94723f921dee9302ebe13d43de6?rik=9tV8KQIrbGRSOg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-EQK2Uyb-O4w%2fTYbwwb51YnI%2fAAAAAAAAAZ4%2ff8NRrFdUt9I%2fs1600%2fP1000468.JPG&ehk=CeltXI0w3%2fydjYKc7eOPz4TI7Bw77HI2rv%2f8EPLw9xo%3d&risl=&pid=ImgRaw&r=0"
+          />
+          </Link>
+          
+         </div>
+         <Link to="FarmBlog"><h6> Enset in Ethiopia</h6></Link>
          
          </div>
 
-        Introduction:<br/>
-        Welcome to "Harvesting Green," a blog dedicated to exploring sustainable practices and innovative techniques in the field of agriculture. In this blog, we aim to provide valuable insights, practical tips, and thought-provoking discussions to help farmers, enthusiasts, and anyone interested in the agricultural industry.
-<br />
-The Importance of Sustainable Agriculture:
-In our first blog post, we delve into the significance of sustainable agriculture and why it is crucial for the future of our planet. We discuss the environmental, social, and economic benefits of adopting sustainable practices and highlight success stories from around the world.
+         
+      <div className="blog-2-container">
+        <div class='blog-2'>
+          <Link to="FarmBlog">
+          <img
+          src="https://omnoms.ae/wp-content/uploads/photo-gallery/Gursha-Iftar-Food-04.JPG" 
+  
+          />
+          </Link>
+          <Link to="FarmBlog"><h6> Making Injera</h6></Link>
+          
+         </div>
 
+        </div>
+        
+      <div className="blog-3-container"> 
+        <div class='blog-3'>
+          <Link to="FarmBlog">
+          <img
+          src="https://th.bing.com/th/id/R.b890b7940bf5a7a0a025d437b693e61e?rik=E4mWqXczQyDX5Q&pid=ImgRaw&r=0 "  
+          />
+          </Link>
+          <Link to="FarmBlog"><h6>Ethiopian Coffee</h6></Link>
+         
+         </div>
+        </div>
+        
 
-     
-      </article>
          </div> 
 
-        <div className='bottomdash'>
+      <div className='bottomdash'>
           <ul>
             <il> Modern Farm 2023</il>
           </ul>
-        </div>
+      </div>
+
+      </div>
 
           </p>
         

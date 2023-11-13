@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:ital@1&family=Playfair+Display&display=swap');
 
 *{
-  margin: 0px;
+  margin: 0px 0px 0px 0px;
   padding: 0px;
 }
 
 
 .header {
+  position: sticky;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +87,14 @@
   height: 4vh;
   width: 350px;
   border: none;
-
+  outline: none;
+  color: black;
+  font-size: 20px;
+  font-family: agbalumo;
+}
+.searchbar::placeholder{
+  color: gray;
+  font-size: 10px;
 }
 
 button4{
@@ -120,6 +129,7 @@ button4{
     justify-content: center;
     align-items: center;
     font-weight: 100;
+    text-decoration: underline;
   }
   
   .body p {
@@ -141,15 +151,14 @@ button4{
     padding-top: 2;
    }
 
- .crop1discription {
-  flex: 1;
-  padding-left: 20px;
+ .discription {
+  margin: 0px 100px 0px 100px;
   display: flex;
   font-family: 'Times New Roman', Times, serif;
-  word-spacing: 2px;
+  word-spacing: 4px;
   line-height: 30px;
   padding-bottom: 100px;
-
+  font-size: 23px ;
  }
 
   .blogtitle{
@@ -169,40 +178,78 @@ button4{
     font-weight: 100;
  }
  
- article{
-  flex: 2;
-  padding-left: 20px;
+ .blog-container{
   display: flex;
-  word-spacing: 2px;
-  line-height: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-bottom: 100px;
-  font-family: 'Times New Roman', Times, serif;
- }
- 
- .blog-img {
-  flex: 1; 
-  margin-right: 20px;
-  justify-content: center;
-  align-items: center;
-  padding-left: 7em;
-  padding-top: 20px;
-}
+  overflow: hidden;
+  }
+  
+  .blog-1 img{
+   height: 250px;
+   border-radius: 20px;
+   transition: transform 0.4s ease;
+   padding: 15px;
+  }
+  .blog-1 img:hover{
+    transform: scale(1.03);
+  }
+  
+  .blog-1-container h6{
+    position: relative;
+    left: 15px;
+    color: black;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+  
+  .blog-2 img{
+    height: 250px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    padding: 15px;
 
-.blog-img img {
-  height: 200px;
-  width: 250px;
-  border-radius: 10px; 
-  margin: 10px;
-  padding-top: 0px;
-  justify-content: center;
-  border-radius: 10px;
-}
+  }
+  .blog-2 img:hover{
+    transform: scale(1.03);
+   }
+
+   .blog-2-container h6{
+    position: relative;
+    left: 25px;
+    color: black;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+  .blog-3 img{
+    height: 250px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    padding: 15px;
+  }
+  .blog-3 img:hover{
+    transform: scale(1.03);
+   }
+   .blog-3-container h6{
+    position: relative;
+    color: black;
+    left: 20px;
+    font-size: 24px;
+    font-weight: 200;
+    text-decoration: dotted;
+    cursor: pointer;
+  }
 
  .bottomdash{
   display: flex;
   background-color:  #a68a64;
   color: white;
-  padding: 100px;
+  padding: 100px 0px 100px 0px;
   justify-content: center;
   align-items: center;
   padding: center;
@@ -229,17 +276,17 @@ button4{
   text-decoration: underline;
   font-size: 30px;
   font-weight: 300;
-  color: rgb(2, 83, 2);
+  color: black;
+  margin-bottom: 30px;
 }
 
 .grid-container{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  cursor: pointer;
-  padding: 5px;
-  padding-bottom: 20px;
+  display: flex;
   flex-wrap: wrap;
+  margin: 0px 80px 30px 80px;
+  cursor: pointer;
+  justify-content: center;
+  
  }
 
  .teff{
@@ -248,7 +295,7 @@ button4{
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
-  padding: 3px;
+  padding: 49px;
   flex-wrap: wrap;
  }
 .teffdescription{
@@ -272,7 +319,7 @@ button4{
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
-  padding: 3px;
+  padding: 49px;
 
  }
  .barleydescription{
@@ -294,7 +341,7 @@ button4{
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
-  padding: 3px;
+  padding: 49px;
 
 
  }
@@ -317,7 +364,7 @@ button4{
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
-  padding: 3px;
+  padding: 49px;
 
  }
  .maizedescription{
@@ -337,7 +384,7 @@ button4{
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
-  padding: 3px;
+  padding: 49px;
 
  }
 .sugercanedescription{
@@ -359,7 +406,7 @@ button4{
   align-items: center;
   text-align: center;
   transition: transform 0.3s ease;
-  padding: 3px;
+  padding: 49px;
 
  }
 .wheatdescription{
@@ -375,14 +422,80 @@ button4{
  .wheat:hover{
   transform: translateY(-5px);
  }
+ .Sorghum{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 49px;
 
+ }
+.SorghumDescription{
+  font-family: agbalumo;
+}
+ .Sorghum img{
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+
+ }
+ .Sorghum:hover{
+  transform: translateY(-5px);
+ }
+
+ .Chickpea{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 49px;
+
+ }
+.ChickpeaDescription{
+  font-family: agbalumo;
+}
+ .Chickpea img{
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+
+ }
+ .Chickpea:hover{
+  transform: translateY(-5px);
+ }
+
+.Cotton{  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 49px;
+
+ }
+.CottonDescription{
+  font-family: agbalumo;
+}
+ .Cotton img{
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+
+ }
+ .Cotton:hover{
+  transform: translateY(-5px);
+ }
  .Avocados{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  padding: 3px;
+  padding: 49px;
 
 }
 .Avocadosdescription{
@@ -406,7 +519,7 @@ button4{
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
-  padding: 3px;
+  padding: 49px;
 }
 .Appledescription{
   font-family: agbalumo;
@@ -428,6 +541,7 @@ button4{
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease;
+  padding: 49px;
 }
 .Bananadescription{
   font-family: agbalumo;
@@ -442,6 +556,79 @@ button4{
 .Banana:hover{
   transform: translateY(-5px);
 }
+ .Banana img{
+  width: 100%;
+  max-width: 300px;
+  transition: transform 0.3s ease;
+  border-radius: 10px
+}
+
+.Banana:hover{
+  transform: translateY(-5px);
+}
+.Watermelon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 49px;
+
+ }
+ .WatermelonDescription{
+  font-family: agbalumo;
+ }
+ .Watermelon img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+ }
+ .Watermelon:hover{
+  transform: translateY(-5px);
+}
+.Lemon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 49px;
+}
+.LemonDescription{
+  font-family: agbalumo;
+ }
+ .Lemon img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+ }
+ .Lemon:hover{
+  transform: translateY(-5px);
+}
+
+.Orange{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  padding: 49px;
+}
+.OrangeDescription{
+  font-family: agbalumo;
+ }
+ .Orange img{
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+ }
+ .Orange:hover{
+  transform: translateY(-5px);
+}
+
+ .barley:hover{
+  transform: translateY(-5px);
+ }
 
 .colorofpage{
   height: 100vh;
@@ -533,18 +720,19 @@ button4{
   grid-template-columns: repeat(3, 1fr);
   padding: 30px;
  }
- .message input{
-  height: 50vh;
-  width: 70vh;
-  border-radius: 10px;
-  max-width: 450px;
-  vertical-align: bottom;
-  font-size: 19px;
-  display: flex;
-  align-items: flex-end;
+ .message textarea{
+  width: 100%;
+  margin-top: 70px;
+  height: 300px;
   padding: 10px;
-  padding-bottom: 5px;
-  box-sizing: border-box;
+  outline: 0;
+  font-size: 19px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: black;
+  background: transparent ;
+  font-size: 15px;
+  resize: none;
  }
  button{
   color: black;
@@ -567,6 +755,7 @@ button4{
   font-size: 30px;
   text-decoration:overline underline;
   color:#a65a70;
+  margin-top: 70px;
  }
 .frequently_asked li{
 color: black;
@@ -581,46 +770,104 @@ color: blue;
 }
 
 
-.farm-blog-header h1{
+.farm-blog-header h2{
   display: flex;
    align-items: center;
    justify-content: center;
    font-family: agbalumo;
    font-weight: 100;
    font-size: 50px;
-   text-decoration:  dotted underline;
+   text-decoration: underline;
 }
-
 .farm-blog-container{
- display: flex;
- align-items: center;
-  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.farm-blog-img{
- flex:1;
- margin-right: 20px;
+.farm-blog-1{
+padding: 90px 0px 20px 0px;
+overflow: hidden;
+border-radius: 20px;
+
 }
-.farm-blog-img img{
-  border-radius: 10px; 
-  width: 100%;
-  height: auto;
-  margin: 20px;
-  padding-top: -10px;
-  margin-left: 20px ;
+.farm-blog-1 img{
+  height: 500px;
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+.farm-blog-1 img:hover{
+  transform: scale(1.05);
+}
+.blog-1-description{
+  margin: 10px 150px 40px 200px;
+  font-size: 19px;
+  line-height: normal;
+  font-family:  playfair display;
 }
 
-.farm-blog-article{
- flex:2;
- padding: 10px;
- padding-top: 50px;
- padding-left: 30px;
- font-family: calibri, Helvetica, sans-serif;
- word-spacing: 5px;
- line-height: 25px;
- font-weight: 10;
- font-size:20px;
- font-size: 15px;
- padding-bottom: 200px;
- margin: 10px 0px 10px 10px;
-}
+.farm-blog-2{
+  padding: 30px 0px 20px 0px;
+  overflow: hidden;
+  }
+  .farm-blog-2 img{
+    height: 500px;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+  }
+  .farm-blog-2 img:hover{
+    transform: scale(1.05);
+  }
+  .blog-2-description{
+    margin: 10px 150px 40px 200px;
+    font-size: 19px;
+    line-height: normal;
+    font-family:  playfair display;
+
+  }
+
+  .farm-blog-3{
+    padding: 60px 0px 20px 0px;
+    overflow: hidden;
+    }
+    .farm-blog-3 img{
+      height: 500px;
+      border-radius: 20px;
+      transition: transform 0.5s ease;
+    }
+    .farm-blog-3 img:hover{
+      transform: scale(1.05);
+    }
+    .blog-3-description{
+      margin: 10px 150px 40px 200px;
+      font-size: 19px;
+      line-height: normal;
+      font-family:  playfair display;
+
+    }
+
+    .-title{
+      display: flex;
+      font-size: 30px;
+      justify-content: center;
+      padding: 40px 0px 40px 0px;
+      text-decoration: underline;
+    }
+   .crop-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     }
+    .crop-container img{
+      margin: 10px 0px 50px 0px;
+      height: 500px;
+      border-radius: 10px;
+    }
+    
+
+    .-article{
+      margin: 10px 150px 300px 200px;
+      font-size: 19px;
+      line-height: normal;
+      font-family:  playfair display;
+    }
