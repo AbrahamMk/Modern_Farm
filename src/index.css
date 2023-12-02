@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:ital@1&display=swap');
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:ital@1&family=Playfair+Display:ital@0;1&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:ital@1&family=Playfair+Display:ital@0;1&family=Poppins&family=Roboto:wght@100&display=swap');
+=======
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:ital@1&family=Playfair+Display&display=swap');
+
+>>>>>>> ec6b140fdfdc98af76eb9583c5ad13f304905966
 *{
   margin: 0px 0px 0px 0px;
   padding: 0px;
@@ -95,10 +100,15 @@
   border: none;
   outline: none;
   color: black;
+<<<<<<< HEAD
   font-size: 17px;
   font-family: agbalumo;
   font-weight: 100;
   padding-left: 5px;
+=======
+  font-size: 20px;
+  font-family: agbalumo;
+>>>>>>> ec6b140fdfdc98af76eb9583c5ad13f304905966
 }
 .searchbar::placeholder{
   color: gray;
@@ -137,6 +147,7 @@ button4{
     justify-content: center;
     align-items: center;
     font-weight: 100;
+<<<<<<< HEAD
     text-decoration: none;
     font-family: agbalumo;
     transition: transform .3s ease;
@@ -146,6 +157,9 @@ button4{
       text-decoration: underline;
 
     }
+=======
+    text-decoration: underline;
+>>>>>>> ec6b140fdfdc98af76eb9583c5ad13f304905966
   }
   
   .body p {
@@ -170,8 +184,12 @@ button4{
  .discription {
   margin: 0px 100px 0px 100px;
   display: flex;
+<<<<<<< HEAD
   font-family: roboto, Times, serif;
   font-weight: lighter;
+=======
+  font-family: 'Times New Roman', Times, serif;
+>>>>>>> ec6b140fdfdc98af76eb9583c5ad13f304905966
   word-spacing: 4px;
   line-height: 30px;
   padding-bottom: 100px;
@@ -201,6 +219,7 @@ button4{
     padding-bottom: 20px;
     font-weight: 100;
  }
+<<<<<<< HEAD
 
  .blog-container{
   display: flex;
@@ -242,6 +261,43 @@ button4{
     transition: transform 0.3s ease;
     padding: 15px;
 
+=======
+ 
+ .blog-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  overflow: hidden;
+  }
+  
+  .blog-1 img{
+   height: 250px;
+   border-radius: 20px;
+   transition: transform 0.4s ease;
+   padding: 15px;
+  }
+  .blog-1 img:hover{
+    transform: scale(1.03);
+  }
+  
+  .blog-1-container h6{
+    position: relative;
+    left: 15px;
+    color: black;
+    font-size: 24px;
+    font-weight: 200;
+    margin-top: 0px;
+    cursor: pointer;
+  }
+  
+  .blog-2 img{
+    height: 250px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+    padding: 15px;
+
+>>>>>>> ec6b140fdfdc98af76eb9583c5ad13f304905966
   }
   .blog-2 img:hover{
     transform: scale(1.03);
@@ -255,12 +311,16 @@ button4{
     font-weight: 200;
     margin-top: 0px;
     cursor: pointer;
+<<<<<<< HEAD
     font-family: playfair;
   }
   .blog-2-container a{
     text-decoration: none;
   }
   
+=======
+  }
+>>>>>>> ec6b140fdfdc98af76eb9583c5ad13f304905966
   .blog-3 img{
     height: 250px;
     border-radius: 20px;
@@ -278,12 +338,16 @@ button4{
     font-weight: 200;
     text-decoration: dotted;
     cursor: pointer;
+<<<<<<< HEAD
     font-family: playfair;
   }
   .blog-3-container a{
     text-decoration: none;
   }
   
+=======
+  }
+>>>>>>> ec6b140fdfdc98af76eb9583c5ad13f304905966
 
  .bottomdash{
   display: flex;
