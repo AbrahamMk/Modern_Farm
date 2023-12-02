@@ -6,13 +6,16 @@ const HomePage = () => {
 
   return (
     <div className="content">
+      <div className="main-header">
+        
+      </div>
         <div className="header">
           <h1>Modern Farm</h1>
           <div className='logo'>
           <img src="https://th.bing.com/th/id/R.3b186fe91c7ed8475c58add5594ae8f9?rik=j%2bzkARBvQjq8Tw&pid=ImgRaw&r=0"
           alt=""
            />
-          </div>s
+          </div>
         </div>
     
       <nav className="navbar">
@@ -34,10 +37,6 @@ const HomePage = () => {
          
          
       </nav>
-      
-       
-
-        
 
         <div className="body">
           <div className='column'>
@@ -45,7 +44,7 @@ const HomePage = () => {
 
           <div className='homeunderline'></div>
           </div>
-          </div>
+        </div>
           <p>
             < div className='crop1'>
         <img
@@ -85,14 +84,12 @@ const HomePage = () => {
       <div className="blog-container">
 
         <div className="blog-1-container">
-
          <div class='blog-1'>
           <Link to="FarmBlog">
           <img
           src="https://th.bing.com/th/id/R.cd0db94723f921dee9302ebe13d43de6?rik=9tV8KQIrbGRSOg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-EQK2Uyb-O4w%2fTYbwwb51YnI%2fAAAAAAAAAZ4%2ff8NRrFdUt9I%2fs1600%2fP1000468.JPG&ehk=CeltXI0w3%2fydjYKc7eOPz4TI7Bw77HI2rv%2f8EPLw9xo%3d&risl=&pid=ImgRaw&r=0"
           />
           </Link>
-          
          </div>
          <Link to="FarmBlog"><h6> Enset in Ethiopia</h6></Link>
          
@@ -133,12 +130,12 @@ const HomePage = () => {
             <il> Modern Farm 2023</il>
           </ul>
       </div>
-
       </div>
 
           </p>
         
     </div>
+    
   );
 };
 
