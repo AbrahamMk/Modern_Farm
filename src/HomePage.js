@@ -15,7 +15,7 @@ const HomePage = () => {
           <img src="https://th.bing.com/th/id/R.3b186fe91c7ed8475c58add5594ae8f9?rik=j%2bzkARBvQjq8Tw&pid=ImgRaw&r=0"
           alt=""
            />
-          </div>s
+          </div>
         </div>
     
       <nav className="navbar">
